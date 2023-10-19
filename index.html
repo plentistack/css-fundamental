@@ -1,52 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fundamentals of CSS Example</title>
+<html>
+<head>
+    <title>CSS Box Model and Styling HTML Elements</title>
     <style>
-      /* Type Selector */
-      p {
-        color: blue;
-        text-transform: uppercase;
-      }
+        /* CSS for the paragraph element */
+        p {
+            content: 'Hello, world!';
+            padding: 10px;
+            border: 2px solid black;
+            margin: 20px;
+            color: blue;
+            font-size: 16px;
+            text-align: center;
+        }
 
-      /* Class Selector */
-      .intro {
-        font-size: 20px;
-      }
+        /* CSS for the element with box-sizing */
+        .element {
+            width: 220px; /* Adjusted width to accommodate padding and border */
+            height: 120px;
+            padding: 10px;
+            border: 2px solid #000;
+            box-sizing: border-box;
+        }
 
-      /* ID Selector */
-      #header {
-        background-color: lightgray;
-      }
+        /* CSS for the element without box-sizing */
+        .element-without-box-sizing {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid #000;
+        }
 
-      /* Universal Selector */
-      * {
-        color: purple;
-      }
+        /* Additional CSS for separating the elements */
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
 
-      /* Descendant Selector */
-      nav > ul > li {
-        list-style: none;
-      }
-
-      /* Styling the "h1" element with a Universal Selector */
-      * h1 {
-        text-transform: uppercase;
-      }
+        .element-container {
+            margin: 20px;
+        }
     </style>
-  </head>
-  <body>
-    <p>This is a paragraph.</p>
-    <p class="intro">This is an introductory paragraph with a class.</p>
-    <div id="header">This is a header with an ID.</div>
-    <ul>
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
-    <h1>This is an h1 heading.</h1>
-    <h4>This is an h4 heading.</h4>
-  </body>
+</head>
+<body>
+    <h1>CSS Box Model and Styling HTML Elements</h1>
+    <p>This is a paragraph element with CSS styles applied to it.</p>
+
+    <div class="container">
+        <div class="element-container">
+            <div class="element">
+                <p>This is an element with specified width, height, padding, border, and box-sizing.</p>
+            </div>
+        </div>
+        <div class="element-container">
+            <div class="element-without-box-sizing">
+                <p>This is an element with specified width, height, padding, and border, without box-sizing.</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
