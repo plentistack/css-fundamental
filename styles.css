@@ -1,0 +1,37 @@
+/* Base styling for the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style for navigation links */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Responsive navigation menu (display as a vertical menu on screens less than 500px wide) */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+/* Example: Stack navigation items for small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav-item {
+        display: block;
+    }
+}
+
+/* Example: Display navigation items horizontally for larger screens (min-width: 769px) */
+@media screen and (min-width: 769px) {
+    .nav-item {
+        display: inline-block;
+    }
+}

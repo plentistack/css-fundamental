@@ -1,52 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fundamentals of CSS Example</title>
-    <style>
-      /* Type Selector */
-      p {
-        color: blue;
-        text-transform: uppercase;
-      }
-
-      /* Class Selector */
-      .intro {
-        font-size: 20px;
-      }
-
-      /* ID Selector */
-      #header {
-        background-color: lightgray;
-      }
-
-      /* Universal Selector */
-      * {
-        color: purple;
-      }
-
-      /* Descendant Selector */
-      nav > ul > li {
-        list-style: none;
-      }
-
-      /* Styling the "h1" element with a Universal Selector */
-      * h1 {
-        text-transform: uppercase;
-      }
-    </style>
-  </head>
-  <body>
-    <p>This is a paragraph.</p>
-    <p class="intro">This is an introductory paragraph with a class.</p>
-    <div id="header">This is a header with an ID.</div>
-    <ul>
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
-    <h1>This is an h1 heading.</h1>
-    <h4>This is an h4 heading.</h4>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Navigation</title>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">Contact</a>
+    </header>
+</body>
 </html>
