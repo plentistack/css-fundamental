@@ -1,52 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fundamentals of CSS Example</title>
-    <style>
-      /* Type Selector */
-      p {
-        color: blue;
-        text-transform: uppercase;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Advanced CSS Techniques</title>
+</head>
+<body>
+    <h1>Advanced CSS Techniques: Grid, Animations, and Transitions</h1>
 
-      /* Class Selector */
-      .intro {
-        font-size: 20px;
-      }
+    <!-- CSS Grid Example -->
+    <section class="grid-section">
+        <h2>CSS Grid: A Two-Dimensional Layout System</h2>
+        <div class="container">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+        </div>
+    </section>
 
-      /* ID Selector */
-      #header {
-        background-color: lightgray;
-      }
+    <!-- CSS Animations Example -->
+    <section class="animation-section">
+        <h2>CSS Animations: Bringing Your Website to Life</h2>
+        <div class="animated-div">Infinite animation</div>
+    </section>
 
-      /* Universal Selector */
-      * {
-        color: purple;
-      }
-
-      /* Descendant Selector */
-      nav > ul > li {
-        list-style: none;
-      }
-
-      /* Styling the "h1" element with a Universal Selector */
-      * h1 {
-        text-transform: uppercase;
-      }
-    </style>
-  </head>
-  <body>
-    <p>This is a paragraph.</p>
-    <p class="intro">This is an introductory paragraph with a class.</p>
-    <div id="header">This is a header with an ID.</div>
-    <ul>
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
-    <h1>This is an h1 heading.</h1>
-    <h4>This is an h4 heading.</h4>
-  </body>
+    <!-- CSS Transitions Example -->
+    <section class="transition-section">
+        <h2>CSS Transitions: Smoothly Changing CSS Values</h2>
+        <div class="transition-div">Hover me for transition</div>
+    </section>
+</body>
 </html>

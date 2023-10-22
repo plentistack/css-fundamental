@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* CSS Grid Styles */
+.grid-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CSS Animations Styles */
+.animation-section {
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+
+.animated-div {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    margin: 20px;
+    animation: example 4s infinite; /* Added reference to keyframes animation */
+}
+
+@keyframes example {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: green; }
+}
+
+/* CSS Transitions Styles */
+.transition-section {
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.transition-div {
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.5s;
+}
+
+.transition-div:hover {
+    background-color: #333;
+}
