@@ -1,52 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fundamentals of CSS Example</title>
-    <style>
-      /* Type Selector */
-      p {
-        color: blue;
-        text-transform: uppercase;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Holiday Adventures</title>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Explore Exciting Holiday Destinations</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      /* Class Selector */
-      .intro {
-        font-size: 20px;
-      }
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to Holiday Adventures! We specialize in creating unforgettable travel experiences.</p>
+    </div>
+  </section>
 
-      /* ID Selector */
-      #header {
-        background-color: lightgray;
-      }
+  <section id="destinations" class="section">
+    <div class="container">
+      <h2>Featured Destinations</h2>
+      <div class="destinations-container">
+        <div class="destination">
+          <img src="images/beach-paradise.jpg" alt="Destination 1">
+          <h3>Beach Paradise</h3>
+          <p>Crystal clear waters and pristine beaches await you.</p>
+        </div>
+        <div class="destination">
+          <img src="images/mountain-retreat.jpg" alt="Destination 2">
+          <h3>Mountain Retreat</h3>
+          <p>Escape to the serene mountains and enjoy nature's beauty.</p>
+        </div>
+        <div class="destination">
+          <img src="images/cultural-delights.jpg" alt="Destination 3">
+          <h3>Cultural Delights</h3>
+          <p>Discover rich history and cultural experiences in unique cities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      /* Universal Selector */
-      * {
-        color: purple;
-      }
+  <section id="highlights" class="section">
+    <div class="container">
+      <h2>Trip Highlights</h2>
+      <div class="highlights-container">
+        <div class="highlight">
+          <img src="images/adventure-activities.jpg" alt="Highlight 1">
+          <h3>Adventure Activities</h3>
+          <p>Experience thrilling adventures like hiking, snorkeling, and more.</p>
+        </div>
+        <div class="highlight">
+          <img src="images/gourmet-dining.jpg" alt="Highlight 2">
+          <h3>Gourmet Dining</h3>
+          <p>Savor exquisite cuisines from around the world in scenic settings.</p>
+        </div>
+        <div class="highlight">
+          <img src="images/luxury-accommodations.jpg" alt="Highlight 3">
+          <h3>Luxury Accommodations</h3>
+          <p>Relax in luxurious hotels and resorts with breathtaking views.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      /* Descendant Selector */
-      nav > ul > li {
-        list-style: none;
-      }
+  <section id="flash-sale" class="section flash-sale">
+    <div class="container">
+      <h2>Flash Sale</h2>
+      <div class="flash-sale-content">
+        <div class="flash-sale-item">
+          <img src="images/beach-paradise.jpg" alt="Sale Item 1">
+          <h3>50% Off Beach Paradise</h3>
+          <p>Book now and enjoy a relaxing beach holiday at half the price!</p>
+          <a href="#" class="flash-sale-button">Book Now</a>
+        </div>
+        <div class="flash-sale-item">
+          <img src="images/mountain-retreat.jpg" alt="Sale Item 2">
+          <h3>40% Off Mountain Retreat</h3>
+          <p>Experience the mountains with a discount on your next adventure!</p>
+          <a href="#" class="flash-sale-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      /* Styling the "h1" element with a Universal Selector */
-      * h1 {
-        text-transform: uppercase;
-      }
-    </style>
-  </head>
-  <body>
-    <p>This is a paragraph.</p>
-    <p class="intro">This is an introductory paragraph with a class.</p>
-    <div id="header">This is a header with an ID.</div>
-    <ul>
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
-    <h1>This is an h1 heading.</h1>
-    <h4>This is an h4 heading.</h4>
-  </body>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Contact us to plan your dream holiday adventure. Your journey begins here!</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2023 Holiday Adventures
+  </footer>
+</body>
 </html>
