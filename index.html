@@ -1,66 +1,156 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <style>
-        /* CSS for Floats */
-        .float-example {
-            float: right;
-            width: 200px;
-            margin: 10px;
-        }
+      /* CSS for Floats */
+      .float-example {
+        float: right;
+        width: 200px;
+        margin: 10px;
+      }
 
-        /* CSS for Positioning */
-        .position-example {
-            position: absolute;
-            top: 50px;
-            right: 20px;
-            width: 200px;
-            height: 100px;
-            background-color: lightblue;
-        }
+      /* CSS for Positioning */
+      .position-example {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 200px;
+        height: 100px;
+        background-color: #b0e0e6; /* Light Blue */
+      }
 
-        /* CSS for Flexbox */
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-        }
+      .fixed-circle {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #0074d9; /* Clear Blue */
+        border-radius: 50%; /* Makes it a circle */
+      }
 
-        .flex-item {
-            width: 100px;
-            height: 100px;
-            background-color: lightgreen;
-            margin: 10px;
-        }
+      /* CSS for Flexbox */
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flex-item {
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+        width: 100px;
+        height: 100px;
+        background-color: #90ee90; /* Light Green */
+        margin: 10px;
+      }
+
+      /* UI Styling */
+      header {
+        background-color: #333; /* Dark Gray */
+        color: #fff; /* White */
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 0 auto; /* Center the container horizontally */
+        background-color: #fff; /* White */
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #333; /* Dark Gray */
+        color: #fff; /* White */
+        text-align: center;
+        padding: 20px;
+      }
+      footer > p {
+        padding: 0px 80px;
+        max-width: 1280px;
+        margin: 0 auto; /* Center the container horizontally */
+      }
     </style>
-</head>
-<body>
-    <h1>CSS Layout Techniques Demo</h1>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Layout Techniques</h1>
+    </header>
 
-    <h2>Floats: Aligning Elements Side by Side</h2>
-    <p>Floats allow you to align elements, such as images or navigation bars, to the left or right, making text wrap around them. For example, you can use 'float: right' to align an image to the right.</p>
+    <div class="container">
+      <section class="layout-section">
+        <h2>Floats: Aligning Elements Side by Side</h2>
+        <p>
+          Floats allow you to align elements, such as images or navigation bars,
+          to the left or right, making text wrap around them. For example, you
+          can use 'float: right' to align an image to the right.
+        </p>
 
-    <img class="float-example" src="https://plentistack.com/wp-content/uploads/2023/10/css-fundamental-03-1024x1024.webp" alt="Floating Image">
-    <p>Here's an example of an image floating to the right, with text wrapping around its left side.</p>
+        <img
+          class="float-example"
+          src="https://plentistack.com/wp-content/uploads/2023/10/css-fundamental-03-1024x1024.webp"
+          alt="Floating Image"
+        />
+        <p>
+          Here's an example of an image floating to the right, with text
+          wrapping around its left side.
+        </p>
+      </section>
 
-    <h2>Positioning: Precise Element Placement</h2>
-    <p>Positioning properties give you control over the exact placement of elements. You can use values like 'static,' 'relative,' 'absolute,' 'fixed,' and 'sticky' to position elements with precision.</p>
+      <section class="layout-section">
+        <h2>Positioning: Precise Element Placement</h2>
+        <p>
+          Positioning properties give you control over the exact placement of
+          elements. You can use values like 'static,' 'relative,' 'absolute,'
+          'fixed,' and 'sticky' to position elements with precision.
+        </p>
 
-    <div class="position-example">Positioned Element</div>
-    <p>In this practical example, we've used 'position: absolute' to position a div 50px from the top and 20px from the right within its containing element.</p>
+        <div class="fixed-circle"></div>
+        <p>
+          In this practical example, we've used 'position: fixed' to create a
+          circular element that stays in a fixed position on the page.
+        </p>
+      </section>
 
-    <h2>Flexbox: Flexible Layouts</h2>
-    <p>Flexbox, or the Flexible Box Layout Module, simplifies creating responsive layouts. By using 'display: flex' on a container, its children are automatically arranged in a row. 'justify-content' helps evenly distribute these children within the container.</p>
+      <section class="layout-section">
+        <h2>Flexbox: Flexible Layouts</h2>
+        <p>
+          Flexbox, or the Flexible Box Layout Module, simplifies creating
+          responsive layouts. By using 'display: flex' on a container, its
+          children are automatically arranged in a row. 'justify-content' helps
+          evenly distribute these children within the container.
+        </p>
 
-    <div class="flex-container">
-        <div class="flex-item">Item 1</div>
-        <div class="flex-item">Item 2</div>
-        <div class="flex-item">Item 3</div>
+        <div class="flex-container">
+          <div class="flex-item">Item 1</div>
+          <div class="flex-item">Item 2</div>
+          <div class="flex-item">Item 3</div>
+        </div>
+      </section>
+
+      <section class="layout-section">
+        <h2>Choosing the Right Technique</h2>
+        <p>
+          Your choice between floats, positioning, and flexbox depends on your
+          specific layout needs. Floats work well for basic column-based
+          layouts, positioning offers precise control but is more complex, while
+          flexbox is ideal for modern, responsive designs, simplifying layout
+          challenges.
+        </p>
+      </section>
     </div>
 
-    <h2>Choosing the Right Technique</h2>
-    <p>Your choice between floats, positioning, and flexbox depends on your specific layout needs. Floats work well for basic column-based layouts, positioning offers precise control but is more complex, while flexbox is ideal for modern, responsive designs, simplifying layout challenges.</p>
-
-    <h2>Conclusion</h2>
-    <p>CSS layout techniques, including floats, positioning, and flexbox, are essential tools for web developers and designers. Mastering these techniques allows you to create sophisticated, responsive, and visually pleasing web layouts. Stay tuned for our next article on responsive design and media queries to adapt layouts for various screen sizes and devices.</p>
-</body>
+    <footer>
+      <h2>Conclusion</h2>
+      <p>
+        CSS layout techniques, including floats, positioning, and flexbox, are
+        essential tools for web developers and designers. Mastering these
+        techniques allows you to create sophisticated, responsive, and visually
+        pleasing web layouts. Stay tuned for our next article on responsive
+        design and media queries to adapt layouts for various screen sizes and
+        devices.
+      </p>
+    </footer>
+  </body>
 </html>
