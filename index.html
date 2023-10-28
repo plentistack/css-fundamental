@@ -5,47 +5,58 @@
     <style>
         /* CSS for the paragraph element */
         p {
-            content: 'Hello, world!';
-            padding: 10px;
-            border: 2px solid black;
-            margin: 20px;
-            color: blue;
+            content: 'Hello, world!';    /* Content area */
+            padding: 10px;               /* Padding around content */
+            border: 2px solid #fff;      /* Border with a dark gray color */
+            margin: 20px;               /* Margin outside the border */
+            color: #0077b6;             /* Text color - a shade of blue */
             font-size: 16px;
             text-align: center;
         }
 
-        /* CSS for the element with box-sizing */
+        /* Styling for the element with box-sizing */
         .element {
-            width: 220px; /* Adjusted width to accommodate padding and border */
-            height: 120px;
+            width: 220px;
+            height: auto;
             padding: 10px;
-            border: 2px solid #000;
-            box-sizing: border-box;
+            border: 2px solid #333;
+            box-sizing: border-box;     /* Include padding and borders in dimensions */
+            background-color: #f2a154; /* Light orange background */
         }
 
-        /* CSS for the element without box-sizing */
+        /* Styling for the element without box-sizing */
         .element-without-box-sizing {
             width: 200px;
-            height: 100px;
+            height: auto;
             padding: 10px;
-            border: 2px solid #000;
+            border: 2px solid #333;
+            background-color: #fce38a; /* Light yellow background */
         }
 
         /* Additional CSS for separating the elements */
         .container {
             display: flex;
             justify-content: space-around;
+            margin: 20px;
         }
 
         .element-container {
             margin: 20px;
         }
+
+        /* Header styles */
+        #header {
+            background-color: #333;    /* Dark gray background for the header */
+            color: #fff;               /* White text color */
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>CSS Box Model and Styling HTML Elements</h1>
-    <p>This is a paragraph element with CSS styles applied to it.</p>
-
+    <div id="header">
+        <h1>CSS Box Model and Styling HTML Elements</h1>
+        <p>This is a paragraph element with CSS styles applied to it.</p>
+    </div>
     <div class="container">
         <div class="element-container">
             <div class="element">
