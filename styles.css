@@ -1,37 +1,41 @@
 /* Base styling for the navigation bar */
 .navbar {
-    overflow: hidden;
-    background-color: #333;
+  background-color: #2196f3;
+  display: flex;
+  padding: 10px;
+}
+
+.navbar > div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: left;
+  align-items: center;
+  /* padding: 10px; */
 }
 
 /* Style for navigation links */
 .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+/* Style for home button */
+.home-button {
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Menu icon */
+.menu-icon {
+  display: block;
+  cursor: pointer;
 }
 
 /* Responsive navigation menu (display as a vertical menu on screens less than 500px wide) */
 @media screen and (max-width: 500px) {
-    .navbar a {
-        float: none;
-        display: block;
-    }
-}
-
-/* Example: Stack navigation items for small screens (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .nav-item {
-        display: block;
-    }
-}
-
-/* Example: Display navigation items horizontally for larger screens (min-width: 769px) */
-@media screen and (min-width: 769px) {
-    .nav-item {
-        display: inline-block;
-    }
+  .hidden {
+    display: none;
+  }
 }
